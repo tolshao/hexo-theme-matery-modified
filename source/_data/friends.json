@@ -1,0 +1,21 @@
+[
+    {
+        "name": "公众号",
+        "url": "http://mp.weixin.qq.com/profile?src=3&timestamp=1596602759&ver=1&signature=6jJFqT92IqiLn64LDjUv4K3MpbEd6S6GQb*1ZIk*vhU59KXh*zFvqI1RAcDsQV0NiKibhaInaAJPHHRP-A9zxw==",
+        "title": "探物及理",
+        "introduction": "每日分享好物与干货，快来拿吧",
+        "avatar": "/medias/logo.png"
+    },{
+        "name": "Bilibili",
+        "url": "https://space.bilibili.com/87847666",
+        "title": "Up主页",
+        "introduction": "这里有好看的视频，快来瞧瞧",
+        "avatar": "/medias/avatars/bilibili.png"
+    },{
+            "name": "Youtube",
+            "url": "https://www.youtube.com/channel/UCurpEPyLHc3h3z-SWlq8Smg?view_as=subscriber",
+            "title": "Homepage",
+            "introduction": "Interesting videos here",
+            "avatar": "/medias/avatars/youtube.png"
+        }
+]
