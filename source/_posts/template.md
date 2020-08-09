@@ -1,7 +1,9 @@
 ---
 title: template
-top: false
-cover: false
+img: /img/15966334903790.jpg
+top: true
+cover: true
+coverimg: /img/15966334903790.jpg
 toc: true
 mathjax: true
 tags:
