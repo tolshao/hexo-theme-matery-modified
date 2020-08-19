@@ -12,7 +12,7 @@ Welcome to follow my WeChat Official Accounts 【探物及理】, thanks for you
 
 
 
-<div align=center><img src="https://github.com/tolshao/blog_comment/blob/master/欢迎关注1.png?raw=true" height="150" /></div>
+<div align=center><img src="https://github.com/tolshao/blog_comment/blob/master/themes/hexo-theme-matery/source/medias/contact.jpg?raw=true" height="150" /></div>
 
 # Usage
 
