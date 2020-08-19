@@ -8,7 +8,7 @@ Hexo是一个易于使用的博客框架，可以快速建立您的博客。
 
 欢迎关注我的微信公众号【探物及理】，谢谢关注。
 
-<div align=center><img src="https://github.com/tolshao/blog_comment/blob/master/themes/hexo-theme-matery/source/medias/contact.jpg?raw=true" height="150" /></div>
+<div align=center><img src="https://github.com/tolshao/hexo-theme-matery-modified/blob/master/themes/hexo-theme-matery/source/medias/contact.jpg?raw=true" height="150" /></div>
 
 
 # 使用说明
