@@ -205,9 +205,9 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: /medias/avatars/avatar.png
+  avatar: /medias/avatars/me.png
   career: 北京航空航天大学 | 张小跳
-  introduction: 我是北京航空航天大学2016级直博生，研究方向是飞行器地面自主滑行非线性关键技术控制。欢迎关注我的微信公众号「推物及理」，干货满满，不容错过！
+  introduction: 我是某航大学2016级直博生，研究方向是飞行器地面自主滑行非线性关键技术控制。欢迎关注我的微信公众号「推物及理」，干货满满，不容错过！
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -551,6 +551,7 @@ subtitle:
   backSpeed: 30 # 删除速度
   sub1: 从来没有真正的绝境, 只有心灵的迷途
   sub2: Never really desperate, only the lost of the soul
+  sub3: When you hoist the sails to cross the sea, you will ride the winds and cleave the waves.
 
 # 手机二级菜单.
 navMenu:
