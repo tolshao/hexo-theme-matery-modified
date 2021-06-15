@@ -9,8 +9,7 @@
 </style>
 
 <div class="card mvaline-card" data-aos="fade-up">
-    <div class="comment_headling"
-        style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
@@ -18,48 +17,9 @@
     </div>
 </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MiniValine - A simple comment system based on Leancloud.</title>
-    <!--Load js and insert it before </ body>-->
-    <script src="https://unpkg.com/minivaline/dist/MiniValine.min.js"></script>
-</head>
-
-<body>
-    <div class="comment"></div>
-    <script>
-        new MiniValine({
-            el: '.comment',
-            appId: 'Qm04RjPhQ8sgw5mIg16MLuKC-gzGzoHsz',
-            appKey: 'QBoWEfQSh5M0eynPA2ga5m7t',
-            placeholder: 'Write a Comment O(∩_∩)O~~'
-        });
-    </script>
-</body>
-<!-- 
+<script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.minivaline) %>"></script>
 <script>
-    new MiniValine({
-        el: '.comments',
-        appId: '<%- theme.minivaline.appId %>',
-        appKey: '<%- theme.minivaline.appKey %>',
-        mode: '<%- theme.minivaline.mode %>',
-        placeholder: '<%- theme.minivaline.placeholder %>',
-        pathname: window.location.pathname,
-        lang: '<%- theme.minivaline.lang %>',
-        adminEmailMd5: '<%- theme.minivaline.adminEmailMd5 %>',
-        tagMeta: <% - '["' + theme.minivaline.tagMeta.join('", "') + '"]' %>,
-        master: <% - '["' + theme.minivaline.master.join('", "') + '"]' %>,
-        friends: <% - '["' + theme.minivaline.friends.join('", "') + '"]' %>,
-        math: <% - theme.minivaline.math %>,
-        md: <% - theme.minivaline.md %>,
-        enableQQ: <% - theme.minivaline.enableQQ %>,
-        NoRecordIP: <% - theme.minivaline.NoRecordIP %>,
-        visitor: <% - theme.minivaline.visitor %>,
-        maxNest: <% - theme.minivaline.maxNest %>,
-        pageSize: <% - theme.minivaline.pageSize %>,
-        serverURLs: '<%- theme.minivaline.serverURLs %>',
-        emoticonUrl: <% - '["' + theme.minivaline.emoticonUrl.join('", "') + '"]' %>,
-    });
-</script> -->
+    new MiniValine(Object.assign(<%- JSON.stringify(theme.minivaline) %>, {
+	  el: '#mvcomments',
+    }));
+</script>

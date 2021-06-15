@@ -5,7 +5,7 @@
 # Site
 title: Tolshao
 subtitle: 探物及理
-description: 北京航空航天大学 | 张小跳
+description: BUAA | 张小跳
 keywords: "BUAA "
 author: Tolshao
 language: zh-CN
@@ -57,18 +57,18 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
-#prismjs:
-#  enable: false
-#  preprocess: true
-#  line_number: true
-#  tab_replace: ''
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
 
-prism_plugin:
-  mode: 'preprocess'    # realtime/preprocess
-  theme: 'tomorrow'
-  line_number: true    # default false
-  custom_css:
+#prism_plugin:
+  #mode: 'preprocess'    # realtime/preprocess
+  #theme: 'tomorrow'
+  #line_number: true    # default false
+  #custom_css:
 
 
 search:
@@ -154,24 +154,6 @@ deploy:
   branch: master
 - type: baidu_url_submitter
 
-#live2d:
-#  enable: false
-#  scriptFrom: local
-#  pluginRootPath: live2dw/
-#  pluginJsPath: lib/
-#  pluginModelPath: assets/
-#  tagMode: false
-#  log: false
-#  model:
-#    use: live2d-widget-model-shizuku
-#  display:
-#    position: left
-#    width: 200
-#    height: 400
-#  mobile:
-#    show: false
-#  react:
-#    opacity: 0.7
 
 baidu_url_submit:
   count: 80

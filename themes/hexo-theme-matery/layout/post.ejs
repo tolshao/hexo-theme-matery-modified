@@ -1,7 +1,7 @@
 <% if (theme.verifyPassword.enable) { %>
 <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.crypto) %>"></script>
 <script>
-    (function () {
+    (function() {
         let pwd = '<%- page.password %>';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('<%- theme.verifyPassword.promptMessage %>')).toString(CryptoJS.enc.Hex)) {
@@ -34,7 +34,7 @@
 <script src="<%- theme.mathjax.cdn %>"></script>
 <script>
     MathJax.Hub.Config({
-        tex2jax: { inlineMath: [['$', '$'], ['\(', '\)']] }
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
     });
 </script>
 <% } %>

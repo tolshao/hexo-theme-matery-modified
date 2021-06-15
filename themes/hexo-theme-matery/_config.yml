@@ -44,8 +44,8 @@ menu:
 time:
   enable: true
   year: 2020 # 年份
-  month: 07 # 月份
-  date: 25 # 日期
+  month: 06 # 月份
+  date: 28 # 日期
   hour: 00 # 小时
   minute: 00 # 分钟
   second: 00 # 秒
@@ -97,7 +97,8 @@ video:
   enable: false
   showTitle: true
   title: 精彩视频
-  url: # 必填
+  url: # url和iframeUrl其中一个必填
+  iframeUrl: #在bilibili或者爱奇艺分享时选择iframe，然后填那个url来这里，sample: //player.bilibili.com/player.html?aid=669520137&bvid=BV1oa4y1L7mw&cid=234543483&page=1
   pic:
   thumbnails:
   height: # 如：400
@@ -117,15 +118,15 @@ recommend:
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
-favicon: /favicon.png
+favicon: /medias/favicon.png
 logo: /medias/logo.png
-wechat: /img/wechatofficial.jpg
+wechat: /img/wechatofficial.png
 
 # The configuration of the second button in the home banner,
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
 # 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
 indexbtn:
-  enable: true
+  enable: false
   name: Youtube
   icon: fa-youtube
   url: https://www.youtube.com/channel/UCurpEPyLHc3h3z-SWlq8Smg?view_as=subscriber
@@ -151,7 +152,7 @@ toc:
   enable: true
   heading: h1, h2, h3, h4
   collapseDepth: 0 # 目录默认展开层级
-  showToggleBtn: false # 是否显示切换TOC目录展开收缩的按钮
+  showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
 
 # 代码块相关
 code:
@@ -172,7 +173,7 @@ reward:
 # 是否激活复制文章时追加博客和作者的版权信息.
 copyright:
   enable: true
-  minCharNumber: 200 # 至少复制多少个字符就追加版权信息.
+  minCharNumber: 120 # 至少复制多少个字符就追加版权信息.
   description: 本文章著作权归作者所有，任何形式的转载都请注明出处。
 
 # Whether to activate the mathjax, this is a global configuration, but the post still does not open the mathjax rendering.
@@ -206,8 +207,8 @@ clicklove:
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatars/me.png
-  career: 北京航空航天大学 | 张小跳
-  introduction: 我是某航大学2016级直博生，研究方向是飞行器地面自主滑行非线性关键技术控制。欢迎关注我的微信公众号「推物及理」，干货满满，不容错过！
+  career: BUAA | 张小跳
+  introduction: 某航2016级直博生，研究方向是机电系统总体设计、复杂机电系统建模与仿真、机械设计、非线性控制、C/C++嵌入式软件开发及半实物仿真、飞机地面动力学仿真、深度强化学习。欢迎关注我的微信公众号「探物及理」，干货满满，不容错过！
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -216,20 +217,21 @@ myProjects:
   enable: true
   data:
     hexo-theme-matery-modified:
-      icon: fas fa-file-alt
+      icon: fas fa-air-freshener
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
       url: https://github.com/tolshao/hexo-theme-matery-modified
       desc: A modified Hexo blog theme made by Blinkfox.
-#    Fenix:
-#        icon: fas fa-database
-#        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-#        url: https://github.com/blinkfox/fenix
-#        desc: 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
-#    typora-vue-theme:
-#        icon: fas fa-file-alt
-#        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-#        url: https://github.com/blinkfox/typora-vue-theme
-#        desc: This is a typora theme inspired by Vue document style.
+    machine-learning-exercises:
+      icon: fas fa-robot
+      iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
+      url: https://github.com/tolshao/machine-learning-exercises-coursera
+      desc: Machine learning exerciseson coursera from Andrew Ng.
+    aircraft 6-dof model, a gym env in RL :
+      icon: fas fa-fighter-jet
+      iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
+      url: https://github.com/tolshao/RL
+      desc: Establish a dynamic simualtion model in gym to do RL
+      
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
@@ -268,13 +270,46 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - /medias/featureimages/0.jpg
-    - /medias/featureimages/1.jpg
-    - /medias/featureimages/2.jpg
+    - /medias/gallery/1.jpg
+    - /medias/gallery/2.jpg
+    - /medias/gallery/3.jpg
+    - /medias/gallery/4.jpg
+    - /medias/gallery/5.jpg
+    - /medias/gallery/6.jpg
+    - /medias/gallery/7.jpg
+    - /medias/gallery/8.jpg
+    - /medias/gallery/9.jpg
+    - /medias/gallery/10.jpg
+    - /medias/gallery/11.jpg
+    - /medias/gallery/12.jpg
+    - /medias/gallery/13.jpg
+    - /medias/gallery/14.jpg
+    - /medias/gallery/15.jpg
+    - /medias/gallery/16.jpg
+    - /medias/gallery/17.jpg
+    - /medias/gallery/18.jpg
+    - /medias/gallery/19.jpg
+    - /medias/gallery/20.jpg
+    - /medias/gallery/21.jpg
+    - /medias/gallery/22.jpg
+    - /medias/gallery/23.jpg
+    - /medias/gallery/24.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
 postCalendar: true
+
+# 不建议使用gittalk,gitment这样权限过高的oauth app,因为它们能够 读写 授权者 所有的公共仓库 ，也就是说拿到你的授权 Token 的人，可以将你的 GitHub 公共仓库删空（这是github权限分的不够细的锅），如果恶意攻击者想获取使用者的 AccessToken，只需要在代码中加上一个 ajax 请求即可。原贴地址:https://www.v2ex.com/t/535608。建议大家看完。（我没有在用gittalk/gitment的网站上评论过，但根据v2ex网友的提示，如果网站自行修改了 gitalk.js 脚本 或者反代了 github api，就很容易拿到你的 Token ）
+
+# https://github.com/utterance/utterances 是个 GitHub App，它的权限仅限于某个仓库。像 hugo hexo 这种静态页面类型的博客，clientID/clientSecret 泄露是不可避免的。我认为较好的解决方式是像 utteras 这种 GitHubApp，只有一个仓库的读写权限，将破坏降到最小。
+
+# valine是使用的免费的leancloud开发版资源，即使数据丢了leancloud也不用负任何的责任。此外valine的src目录已在1.4.0后停止更新。。。薛定谔的开源。
+
+# 当初多说国内最大都倒了，livere不一定靠谱。
+
+# disqus被墙了。
+
+# 畅言需要备案。
 
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
@@ -314,8 +349,8 @@ livere:
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
   enable: true
-  appId: 95yBDkVN1yK5DfgeKyR5sgiL-gzGzoHsz
-  appKey: tW5Tkk9gPYoRu2LFDLBNv7lP
+  appId: OnJFSzNbgXvyq7HpceznyJCs-MdYXbMMI #95yBDkVN1yK5DfgeKyR5sgiL-gzGzoHsz
+  appKey: GOdpDzgEWXAY04EmNVLIc3pr #tW5Tkk9gPYoRu2LFDLBNv7lP
   notify: false
   verify: false
   visitor: true
@@ -323,10 +358,11 @@ valine:
   pageSize: 10
   placeholder: 'just go go' # Comment Box placeholder
   background: /medias/comment_bg.png
+  coolpushkey: 
 
 # The configuration of the MiniValine comment module is not activated by default.
-# To use it, activate the configuration item and set appId and appKey.
-# MiniValine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
+# To use it, activate the configuration item.
+# MiniValine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项
 # See: https://github.com/MiniValine/MiniValine
 minivaline:
   enable: false
@@ -367,13 +403,31 @@ minivaline:
     - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
     - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
     - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
+  # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el] 选项）  
+  # emoticonUrl 等列表选项 可参考 https://github.com/MiniValine/hexo-next-minivaline
+  # 下面是一个例子：
+  serverURL: https://minivaline.your-domain.top
 
+changyan:
+  enable: false
+  appId:
+  conf:
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
-  enable: true
-  url: https://github.com/tolshao/hexo-theme-matery-modified
+  enable: false
+  url: https://github.com/tolshao
   title: Fork Me
+
+# The configuration of the Twikoo comment module is not activated by default.
+# To use it, activate the configuration item and set envId.
+# Twikoo 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置环境 ID envId.
+# See: https://twikoo.js.org
+twikoo:
+  enable: false
+  envId: twikoo-1gs9l0fb17e7897a # 环境 ID，搭建教程：https://twikoo.js.org/quick-start.html
+  # region: ap-guangzhou # 环境地域，默认为 ap-shanghai
+  # path: 'window.location.pathname' # 自定义文章路径
 
 # The password verification feature of read post. To use this feature,
 # activate the configuration item and write the 'password' key and Cipher in the post's Front-matter.
@@ -411,8 +465,11 @@ baiduPush: true
 # The used front-end library can be replaced with the corresponding CDN address as needed,
 # If the specific version is not specified below, you can use the latest version.
 # 使用到的前端库，可按需替换成对应的CDN地址，如果下面未指定具体的版本号，使用最新的版本即可.
+# 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在设置js及css路径中可以直接写.min.xxx
 libs:
   css:
+    matery: /css/matery.css
+    mycss: /css/my.css
     fontAwesome: /libs/awesome/css/all.css # V5.11.1
     materialize: /libs/materialize/materialize.min.css # 1.0.0
     aos: /libs/aos/aos.css
@@ -423,7 +480,9 @@ libs:
     gitalk: /libs/gitalk/gitalk.css
     jqcloud: /libs/jqcloud/jqcloud.css
     tocbot: /libs/tocbot/tocbot.css
+    prism: /libs/prism/prism.css
   js:
+    matery: /js/matery.js
     jquery: /libs/jquery/jquery.min.js
     materialize: /libs/materialize/materialize.min.js # 1.0.0
     masonry: /libs/masonry/masonry.pkgd.min.js # v4.0.0
@@ -438,7 +497,8 @@ libs:
     echarts: /libs/echarts/echarts.min.js
     gitalk: /libs/gitalk/gitalk.min.js
     valine: /libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
-    minivaline: https://unpkg.com/minivaline/dist/MiniValine.min.js
+    minivaline: /libs/minivaline/MiniValine.js # latest
+    twikoo: /libs/twikoo/twikoo.all.min.js # 若想保持最新版，请替换为 https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js  默认为 /libs/twikoo/twikoo.all.min.js
     jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
     tocbot: /libs/tocbot/tocbot.min.js
     canvas_nest: /libs/background/canvas-nest.js
@@ -466,14 +526,7 @@ featureImages:
 - /medias/featureimages/13.jpg
 - /medias/featureimages/14.jpg
 - /medias/featureimages/15.jpg
-- /medias/featureimages/16.jpg
-- /medias/featureimages/17.jpg
-- /medias/featureimages/18.jpg
-- /medias/featureimages/19.jpg
-- /medias/featureimages/20.jpg
-- /medias/featureimages/21.jpg
-- /medias/featureimages/22.jpg
-- /medias/featureimages/23.jpg
+
 
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
@@ -500,13 +553,18 @@ reprint:
 
 # DaoVoice online contact
 daovoice:
-  enable: true
+  enable: false
   app_id: df58ba90
 
 # Tidio online contact
 tidio:
   enable: false
-  public_key:
+  public_key: nree3mkfz27thciyhn32bo6iq1eleyql
+
+# 腾讯兔小巢，见https://txc.qq.com/
+tuxiaochao:
+  enable: false
+  productId: 331855
 
 #背景canvas-nest
 canvas_nest:
@@ -533,7 +591,7 @@ ribbon_dynamic:
 # 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.
 sharejs:
   enable: true
-  sites: twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin
+  sites: wechat,weibo,twitter,facebook,qq,qzone,douban,linkedin
 
 # addthis文章分享模块.
 addthis:
@@ -549,9 +607,10 @@ subtitle:
   startDelay: 300 # 开始延迟
   typeSpeed: 50 # 打字速度
   backSpeed: 30 # 删除速度
-  sub1: 从来没有真正的绝境, 只有心灵的迷途
-  sub2: Never really desperate, only the lost of the soul
-  sub3: When you hoist the sails to cross the sea, you will ride the winds and cleave the waves.
+  sub:
+    - 从来没有真正的绝境, 只有心灵的迷途
+    - Never really desperate, only the lost of the soul
+    - When you hoist the sails to cross the sea, you will ride the winds and cleave the waves.
 
 # 手机二级菜单.
 navMenu:
@@ -581,5 +640,37 @@ icp:
 #
 # 注：配置了此项，就代表着本地调试的时候，网站依然会去GitHub请求资源（原来的资源），本地调试的时候记得将 此项配置 注释或者删除掉
 # 更多关于访问速度优化，请查看：https://blog.sky03.cn/posts/42790.html
+# 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在上面设置js及css路径中可以直接写.min.xxx
 jsDelivr:
-  url: #https://cdn.jsdelivr.net/gh/tolshao/tolshao.github.io
+  url: https://cdn.jsdelivr.net/gh/tolshao/tolshao.github.io
+  
+# 网站背景图
+background:
+  enable: false
+  url: "https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg"
+
+# 说说 https://artitalk.js.org/
+artitalk:
+  enable: false
+  appId: # xxxxx
+  appKey: # xxxxxx
+
+# 哔哔功能配置
+# 登陆leancloud创建应用。进入应用后，点击创建 Class，将「 Class 名称」命名为 content
+# 点击刚刚创建的content Class，点击添加列并创建名称为content的列，类型为String，注意列注释也要填写（随意填）
+# 记录appid，masterkey，api域名
+# 输入:hexo new page bb
+# hexo就在source文件夹下创建了bb/index.md。
+# 修改index.md的frontmater下的layout为bb：
+# ---
+# title: 黑石说
+# layout: bb
+# ---
+# 里面的文字可以自己随意加，会显示在哔哔的上方。
+# 关注公众号 "黑石哔哔"，发送: //bindCurrentUser:你的APPID,你的MASTERKEY,你的RESTAPI
+# 可用leancloud国际版，国际版api为 https://appid前八位.api.lncldglobal.com
+bbtime:
+ enable: false
+ appId: # 你的appId
+ appKey: # 你的appKey
+ serverURLs: # https://你的api
