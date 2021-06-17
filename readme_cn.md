@@ -16,7 +16,7 @@ Hexo是一个易于使用的博客框架，可以快速建立您的博客。
 - 安装hexo，
 `cd`进入您的博客目录并运行以下代码。
 
-npm install hexo-cli -g
+`npm install hexo-cli -g\`
 
 如果发生错误，您可以先安装`node.js`。
 
