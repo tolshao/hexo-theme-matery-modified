@@ -19,7 +19,7 @@ Welcome to follow my WeChat Official Accounts 【探物及理】, thanks for you
 - Install hexo, 
 `cd` into your blog directory and run the following code.
 
-npm install hexo-cli -g
+`npm install hexo-cli -g`
 
 If errors occurs, you might install `node.js` first.
 
